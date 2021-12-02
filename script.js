@@ -48,8 +48,11 @@ number.forEach(item => {
 
 //add listeners to the operators
 operators.forEach(item => {
+  
   item.addEventListener("click", calculate)
 });
+
+
 //add listener to the equals key
 equals.addEventListener('click', () => {
  solution = operate(operator, firstValue, inputs.textContent)
